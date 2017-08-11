@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		354AE50F1F3D45DB00C5A2A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354AE50E1F3D45DB00C5A2A5 /* MapKit.framework */; };
+		354AE5111F3D51B800C5A2A5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354AE5101F3D51B800C5A2A5 /* MapViewController.swift */; };
 		35A41CB41F3C06CC00D16F7C /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A41CB31F3C06CC00D16F7C /* DetailTableViewCell.swift */; };
 		35F26BBA1F3B1CC900030D75 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F26BB91F3B1CC900030D75 /* Area.swift */; };
 		35F26BBC1F3B1F1F00030D75 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F26BBB1F3B1F1F00030D75 /* DetailTableViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		354AE50E1F3D45DB00C5A2A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		354AE5101F3D51B800C5A2A5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		35A41CB31F3C06CC00D16F7C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		35F26BB91F3B1CC900030D75 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		35F26BBB1F3B1F1F00030D75 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				35F26BBB1F3B1F1F00030D75 /* DetailTableViewController.swift */,
 				35A41CB31F3C06CC00D16F7C /* DetailTableViewCell.swift */,
 				35FD202C1F3C58B90064FB95 /* ReviewViewController.swift */,
+				354AE5101F3D51B800C5A2A5 /* MapViewController.swift */,
 				B78DFDBB1F3830C900930746 /* Main.storyboard */,
 				B78DFDBE1F3830C900930746 /* Assets.xcassets */,
 				B78DFDC01F3830C900930746 /* LaunchScreen.storyboard */,
@@ -301,6 +304,7 @@
 				B78DFDE81F3831EC00930746 /* CustomTableViewCell.swift in Sources */,
 				B78DFDE61F3831D500930746 /* AreaTableViewController.swift in Sources */,
 				B78DFDB81F3830C900930746 /* AppDelegate.swift in Sources */,
+				354AE5111F3D51B800C5A2A5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

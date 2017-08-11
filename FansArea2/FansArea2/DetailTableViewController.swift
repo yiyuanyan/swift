@@ -77,6 +77,12 @@ class DetailTableViewController: UITableViewController {
             self.ratingBtn.setImage(UIImage.init(named: rating), for: .normal);
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap"{
+            let destVc = segue.destination as! MapViewController;
+            destVc.area = self.area;
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
