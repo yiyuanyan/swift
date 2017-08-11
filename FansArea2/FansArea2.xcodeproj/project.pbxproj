@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354AE50F1F3D45DB00C5A2A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354AE50E1F3D45DB00C5A2A5 /* MapKit.framework */; };
+		35A41CB41F3C06CC00D16F7C /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A41CB31F3C06CC00D16F7C /* DetailTableViewCell.swift */; };
+		35F26BBA1F3B1CC900030D75 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F26BB91F3B1CC900030D75 /* Area.swift */; };
+		35F26BBC1F3B1F1F00030D75 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F26BBB1F3B1F1F00030D75 /* DetailTableViewController.swift */; };
+		35FD202D1F3C58B90064FB95 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD202C1F3C58B90064FB95 /* ReviewViewController.swift */; };
 		B78DFDB81F3830C900930746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DFDB71F3830C900930746 /* AppDelegate.swift */; };
 		B78DFDBD1F3830C900930746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78DFDBB1F3830C900930746 /* Main.storyboard */; };
 		B78DFDBF1F3830C900930746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78DFDBE1F3830C900930746 /* Assets.xcassets */; };
@@ -15,7 +20,6 @@
 		B78DFDD81F3830C900930746 /* FansArea2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DFDD71F3830C900930746 /* FansArea2UITests.swift */; };
 		B78DFDE61F3831D500930746 /* AreaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DFDE51F3831D500930746 /* AreaTableViewController.swift */; };
 		B78DFDE81F3831EC00930746 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DFDE71F3831EC00930746 /* CustomTableViewCell.swift */; };
-		B78DFDEA1F385AEF00930746 /* AreaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DFDE91F385AEE00930746 /* AreaDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		354AE50E1F3D45DB00C5A2A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		35A41CB31F3C06CC00D16F7C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		35F26BB91F3B1CC900030D75 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		35F26BBB1F3B1F1F00030D75 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		35FD202C1F3C58B90064FB95 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		B78DFDB41F3830C800930746 /* FansArea2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FansArea2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78DFDB71F3830C900930746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78DFDBC1F3830C900930746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +59,6 @@
 		B78DFDD91F3830C900930746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B78DFDE51F3831D500930746 /* AreaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewController.swift; sourceTree = "<group>"; };
 		B78DFDE71F3831EC00930746 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		B78DFDE91F385AEE00930746 /* AreaDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354AE50F1F3D45DB00C5A2A5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354AE50D1F3D45DB00C5A2A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				354AE50E1F3D45DB00C5A2A5 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B78DFDAB1F3830C800930746 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 				B78DFDCB1F3830C900930746 /* FansArea2Tests */,
 				B78DFDD61F3830C900930746 /* FansArea2UITests */,
 				B78DFDB51F3830C800930746 /* Products */,
+				354AE50D1F3D45DB00C5A2A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +122,10 @@
 				B78DFDB71F3830C900930746 /* AppDelegate.swift */,
 				B78DFDE51F3831D500930746 /* AreaTableViewController.swift */,
 				B78DFDE71F3831EC00930746 /* CustomTableViewCell.swift */,
-				B78DFDE91F385AEE00930746 /* AreaDetailViewController.swift */,
+				35F26BB91F3B1CC900030D75 /* Area.swift */,
+				35F26BBB1F3B1F1F00030D75 /* DetailTableViewController.swift */,
+				35A41CB31F3C06CC00D16F7C /* DetailTableViewCell.swift */,
+				35FD202C1F3C58B90064FB95 /* ReviewViewController.swift */,
 				B78DFDBB1F3830C900930746 /* Main.storyboard */,
 				B78DFDBE1F3830C900930746 /* Assets.xcassets */,
 				B78DFDC01F3830C900930746 /* LaunchScreen.storyboard */,
@@ -201,6 +222,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = RD7J4DU62A;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B78DFDC71F3830C900930746 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -268,7 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78DFDEA1F385AEF00930746 /* AreaDetailViewController.swift in Sources */,
+				35A41CB41F3C06CC00D16F7C /* DetailTableViewCell.swift in Sources */,
+				35F26BBA1F3B1CC900030D75 /* Area.swift in Sources */,
+				35FD202D1F3C58B90064FB95 /* ReviewViewController.swift in Sources */,
+				35F26BBC1F3B1F1F00030D75 /* DetailTableViewController.swift in Sources */,
 				B78DFDE81F3831EC00930746 /* CustomTableViewCell.swift in Sources */,
 				B78DFDE61F3831D500930746 /* AreaTableViewController.swift in Sources */,
 				B78DFDB81F3830C900930746 /* AppDelegate.swift in Sources */,
