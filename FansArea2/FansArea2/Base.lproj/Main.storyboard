@@ -81,7 +81,13 @@
                             <outlet property="delegate" destination="ons-vJ-e3W" id="pNj-qF-4YH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="地区列表" id="LZl-dn-Okf"/>
+                    <navigationItem key="navigationItem" title="地区列表" id="LZl-dn-Okf">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6EN-PU-djn">
+                            <connections>
+                                <segue destination="xNh-uF-jo3" kind="modal" identifier="addArea" id="xmJ-xH-WIv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l68-Fm-KzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,7 +370,7 @@
         <!--新增-->
         <scene sceneID="EZw-Cz-YcX">
             <objects>
-                <tableViewController id="iM3-OT-8Jg" sceneMemberID="viewController">
+                <tableViewController id="iM3-OT-8Jg" customClass="AddAreaController" customModule="FansArea2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="A5n-Qc-8i3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,7 +400,7 @@
                                         <rect key="frame" x="0.0" y="250" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rwI-6I-HLc" id="8Wx-hh-EqP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-pS-Dky">
@@ -426,7 +432,7 @@
                                         <rect key="frame" x="0.0" y="322" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DPO-F5-EFM" id="jy7-HE-FaS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="省" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-Kf-Cfc">
@@ -458,7 +464,7 @@
                                         <rect key="frame" x="0.0" y="394" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xb3-QL-iSl" id="vN4-ie-Tds">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92C-07-Fty">
@@ -490,7 +496,7 @@
                                         <rect key="frame" x="0.0" y="466" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWk-2A-JxJ" id="VS1-gI-3rX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我来过" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcT-2H-Whn">
@@ -539,9 +545,20 @@
                             <outlet property="delegate" destination="iM3-OT-8Jg" id="o9X-QI-uMv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="新增" id="hWD-Dh-q8r"/>
+                    <navigationItem key="navigationItem" title="新增" id="hWD-Dh-q8r">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="AEE-6y-ptD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="ssS-fy-tIL" kind="unwind" unwindAction="closeWithSegue:" id="cqo-8D-1GK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="coverImageView" destination="W3S-LB-YpM" id="4PG-YN-nf2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2o-4H-nMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ssS-fy-tIL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2784.8000000000002" y="1702.3988005997003"/>
         </scene>

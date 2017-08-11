@@ -129,6 +129,9 @@ class AreaTableViewController: UITableViewController {
         //返回的是数组
         return [actionShare,actionDel,actionTop];
     }
+    @IBAction func close(segue:UIStoryboardSegue){
+    
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -16,18 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        //设置导航条样式
-//        //设置导航栏的前景色
-//        UINavigationBar.appearance().barTintColor = UIColor.init(red: 242/255.0, green: 116/255.0, blue: 119/255.0, alpha: 1);
-//        //设置导航栏的文字颜色
-//        UINavigationBar.appearance().tintColor = UIColor.white;
-//        //设置导航栏的文字属性
-//        if let barFont = UIFont.init(name: "Avenir-Light", size: 24){
-//            UINavigationBar.appearance().titleTextAttributes = [
-//                NSFontAttributeName:barFont,
-//                NSForegroundColorAttributeName:UIColor.white
-//            ];
-//        }
+        //设置导航条样式
+        //设置导航栏的前景色
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 242/255.0, green: 116/255.0, blue: 119/255.0, alpha: 1);
+        //设置导航栏的文字颜色
+        UINavigationBar.appearance().tintColor = UIColor.white;
+        //设置导航栏的文字属性
+        if let barFont = UIFont.init(name: "Avenir-Light", size: 24){
+            UINavigationBar.appearance().titleTextAttributes = [
+                NSFontAttributeName:barFont,
+                NSForegroundColorAttributeName:UIColor.white
+            ];
+        }
         return true
     }
 
